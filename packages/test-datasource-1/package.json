@@ -10,5 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^15.6.1"
-  }
+  },
+  "gitHead": "2e337039f50a9eeea8a9d37f17a6bfedc51b7f02"
 }
