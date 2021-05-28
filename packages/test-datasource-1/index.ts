@@ -1,3 +1,3 @@
 export const sayHello = () => {
-  console.log("hello from datasource 1");
+  console.log("hello from datasource 1!");
 };

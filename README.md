@@ -9,6 +9,9 @@ packages can be developed in a single repo.
 Official lerna docs:
 https://github.com/lerna/lerna
 
+Nice tutorial on creating a Lerna monorepo:
+https://viewsource.io/publishing-and-installing-private-github-packages-using-yarn-and-lerna/
+
 ## Commands
 
 To start a lerna project run:

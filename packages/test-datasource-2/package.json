@@ -1,12 +1,17 @@
 {
-  "name": "test-datasource-2",
+  "name": "@jake-ruth-qm/test-datasource-2",
   "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jake-ruth-qm/lerna-poc.git",
+    "directory": "packages/test-datasource-2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "gitHead": "2e337039f50a9eeea8a9d37f17a6bfedc51b7f02"
+  "gitHead": "8ac429c2db418cfff6ae9e01fbce974a76c400f8"
 }
