@@ -1,6 +1,7 @@
 {
-  "name": "root",
-  "private": true,
+  "name": "@jake-ruth-qm/lerna-poc",
+  "private": false,
+  "repository": "https://github.com/jake-ruth-qm/lerna-poc.git",
   "devDependencies": {
     "lerna": "^4.0.0"
   }
