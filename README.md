@@ -1,4 +1,4 @@
-# Learna Monorepos
+# Lerna Monorepos
 
 Spliiting up large codebases into separate independently versioned packages is very useful for code sharing.
 However, this quickly becomes complicated as tracking changes accross many repositories becomes messy and difficult to track.
@@ -36,3 +36,30 @@ you're releasing.
 `npx lerna init --independent`
 
 Independent mode Lerna projects allows maintainers to increment package versions independently of each other. Each time you publish, you will get a prompt for each package that has changed to specify if it's a patch, minor, major or custom change. You can use this with the semantic-release npm package to make the process more painless.
+
+### The setup
+
+Once you have your repo set up, genereate a personal access token in github:
+https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token
+
+Next, create a `.npmrc` file in the root of your project with the following:
+
+```
+//npm.pkg.github.com/:_authToken=ACCESS_TOKEN
+@jake-ruth-qm:registry=https://npm.pkg.github.com
+```
+
+Where `ACCESS_TOKEN` is your personal access token and `jake-ruth-qm` is your github username
+
+In each of your packages, run npm init in the root to initialize. Then in your package.json add the following fields:
+
+`"name": "@jake-ruth-qm/test-datasource-1"`
+This will match your username and package name (jake-ruth-qm username and test-datasource-1 is the package name)
+
+```
+ "repository": {
+    "type": "git",
+    "url": "https://github.com/jake-ruth-qm/lerna-poc.git",
+    "directory": "packages/test-datasource-1"
+  },
+```
