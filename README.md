@@ -63,3 +63,7 @@ This will match your username and package name (jake-ruth-qm username and test-d
     "directory": "packages/test-datasource-1"
   },
 ```
+
+## Keeping Forked Repo up to date with upstream
+
+https://garrytrinder.github.io/2020/03/keeping-your-fork-up-to-date
